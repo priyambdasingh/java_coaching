@@ -8,19 +8,18 @@ public class PrimeNumbers {
         int n = sc.nextInt();
         System.out.println("Enter value for m:");
         int m = sc.nextInt();
-        int c = 0;
-        for (int k = n; k <= m; k++) {
 
+        for (int k = n; k <= m; k++) {
+            int c = 0;
             for (int j = 1; j <= k; j++) {
                 if (k % j == 0) {
                    c++;
                 }
             }
             if (c == 2) {
-                System.out.println( " is a prime number");
-            } else {
-                System.out.println( " is not a prime number");
+                System.out.println( k+" is a prime number");
+            }
             }
         }
     }
-}
+

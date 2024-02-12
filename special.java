@@ -12,7 +12,7 @@ public class special {
 
         while (n > 0) {
             int d = n % 10;
-            int p = 1; // Initialize p inside the loop
+            int p = 1;
             for (int i = 1; i <= d; i++) {
                 p *= i;
             }
