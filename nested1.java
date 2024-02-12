@@ -12,6 +12,6 @@ public class nested1 {
             }
             System.out.println();
             g--;
-        };
+        }
     }
  }
