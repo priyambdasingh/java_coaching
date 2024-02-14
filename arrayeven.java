@@ -8,7 +8,7 @@ public class arrayeven {
         System.out.println("enter any 15 value");
         int a[] = new int [15];
         int s =0;
-        for(int i =0; i<=15; i++)
+        for(int i =0; i<15; i++)
         {
             a[i] =sc.nextInt();
            if (a[i]%2==0)
