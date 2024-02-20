@@ -24,28 +24,43 @@ public class primeAutomorphic {
 //                    System.out.println( n+" is a prime number");
 //                }
 //                  System.out.println( n+" not is a prime number");
-        int square = n * n;
-        boolean isIsoMorphic = true;
-
-        while (n > 0) {
-            int lastDigit = n % 10;
-            int lastDigitOfSquare = square%10;
-            if(lastDigit == lastDigitOfSquare){
-                n = n / 10;
-                square = square/10;
-            }
-            else{
-                isIsoMorphic = false;
-                System.out.println("not an isomorphic");
-                break;
-            }
-
-        }
-        if(isIsoMorphic)
-            System.out.println("isomorphic number");
-
+//        int square = n * n;
+//        boolean isIsoMorphic = true;
+//
+//        while (n > 0) {
+//            int lastDigit = n % 10;
+//            int lastDigitOfSquare = square%10;
+//            if(lastDigit == lastDigitOfSquare){
+//                n = n / 10;
+//                square = square/10;
+//            }
+//            else{
+//                isIsoMorphic = false;
+//                System.out.println("not an isomorphic");
+//                break;
+//            }
+//
+//        }
+//        if(isIsoMorphic)
+//            System.out.println("isomorphic number");
+//
+//    }
+//}
+    int m=n,c=0;
+    while(m>0) {
+        int d = m % 10;
+        c++;
+        m = m / 10;
     }
-}
+    if(n==n*n%(int)Math.pow(10,c)) {
+        System.out.println("auto");
+    }
+    else
+    {
+        System.out.println("not auto");
+    }
+    }
+    }
 
 
 
