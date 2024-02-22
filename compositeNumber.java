@@ -14,13 +14,15 @@ public class compositeNumber {
         Scanner sc = new Scanner(System.in);
       System.out.println("enter value");
       int n = sc.nextInt();
-        int d;
-      for(int i = 2;i<=n; i++)
-      {
-           d= n/i;
-          System.out.println(d);
-
-      }
+        int min=9;
+        while(n>0) {
+            int d = n % 10;
+            if (d < min)
+                min = d;
+            n = n / 10;
+        }
+        System.out.println("smallest digit"+min);
+        }
 
     }
-}
+
