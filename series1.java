@@ -4,7 +4,7 @@ public class series1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter value");
-        int n= sc.nextInt(); // Change the value of n to the desired number of terms
+        int n= sc.nextInt();
         double sum = 0;
 
         for (int i = 1; i <= n; i++) {

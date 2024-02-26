@@ -27,7 +27,11 @@ public class twoMetrixmultiplication {
 
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    c[i][j] = a[i][j] * b[i][j];
+                    int s=0;
+                    for(int k=0; k<n;k++) {
+                        s += a[i][k] * b[k][j];
+                    }
+                    c[i][j]=s;
                 }
             }
 
