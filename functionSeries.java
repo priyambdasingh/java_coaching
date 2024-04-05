@@ -16,9 +16,9 @@ public class functionSeries {
 
     public static void main(String[] args) {
         star();
-        System.out.println("                                   welcome");
+        System.out.println("welcome");
         star();
-        System.out.println("                                  to function");
+        System.out.println("to function");
         star();
 
     }

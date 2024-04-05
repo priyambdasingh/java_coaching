@@ -11,7 +11,7 @@ public class cityName {
             System.out.print("enter value ");
             a = sc.nextLine();
             int f=0;
-        for(int i =0;i< n.length;i++) {
+           for(int i =0;i< n.length;i++) {
             n[i] = sc.nextLine();
             if (n[i].equalsIgnoreCase(a))
             {
